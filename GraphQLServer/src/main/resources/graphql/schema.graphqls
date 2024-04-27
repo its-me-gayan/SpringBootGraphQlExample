@@ -1,0 +1,14 @@
+type User {
+    id: ID!
+    username: String!
+    firstName: String!
+    lastName: String!
+    userRole: String!
+}
+
+
+# The Root Query for the application
+type Query {
+    searchAllCustomer(count: Int, offset: Int): [User]!
+}
+
